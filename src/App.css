@@ -15,7 +15,7 @@
 }
 
 .muralContainer{
-  height: auto;
+  height: 60%;
   width: 100%;
   display: flex;
   justify-content: space-evenly;

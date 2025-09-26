@@ -1,14 +1,27 @@
-.CardStyle{
+.ContainerCondition{
+   height: 400px;
+   width: 500px;
+}
+
+.ButtonImage{
    width: 28rem;
    height: 40rem;
+   border: none;
+   cursor: auto;
+}
+.CardStyle{
+   width: 100%;
+   height: 100%;
    z-index: 1;
-   display: flex;
+   display: absolute;
    align-items: end;
    justify-content: center;
    background-size: cover;
    transition: background-image 0.5s ease-in-out;
    border-radius: 1.5rem;
+   cursor: pointer;
 }
+
 
 .DownSection{
    width: 80%;
