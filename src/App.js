@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import foto from './fotos/momoEeuMURAL5.jpg'
+import foto1 from './fotos/momoEeuMural4.jpg'
+import f1 from './fotos/f1.jpg'
+
+
+import Card from './components/card';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="background">
+        <div className="muralContainer">
+          <Card title={"Cinema"} image={foto}></Card>
+          <Card title={"Foda"} image={f1}></Card>
+          <Card title={"Foda"} image={foto1}></Card>
+        </div>
+      </div>
     </div>
   );
 }
