@@ -1,21 +1,19 @@
 import "./card.css"
-import { useState } from 'react'
+
 export default function Card({ title, image }) {
-    var [isOpen, setIsOpen] = useState(false);
-    return (
-        <div className="ContainerCondition">
-            {isOpen = false ?
-            <h1>ola</h1>
-            :
-            <button className="ButtonImage" onClick={ () => setIsOpen(isOpen === true) }  >
-                
-                <img className="CardStyle" src={image} />
-                
-                <div className="DownSection">      
-                    <h2 className> {title} </h2>
-                </div>
-            </button>
-            }
+  return (
+    <div className="CardContainer">
+      <div className="Card">
+        <div className="CardFront">
+          <img className="CardStyle" src={image} alt="foto" />
+          <div className="DownSection">      
+            <h2>{title}</h2>
+          </div>
         </div>
-    )
+        <div className="CardBack">
+          <h1>oi</h1>
+        </div>
+      </div>
+    </div>
+  )
 }
