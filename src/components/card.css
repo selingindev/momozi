@@ -33,27 +33,48 @@
 .CardFront {
   background: #fff;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .CardBack {
-  background: peachpuff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.671);
   transform: rotateY(180deg) scale(1.05); 
 }
+
+
+.CardBack h3 {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  color: #000000;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 
 /* Ajustes de estilo já existentes */
 .CardStyle {
   width: 100%;
-  height: 85%;
+  height: 90%;
   object-fit: cover;
   border-radius: 1.5rem 1.5rem 0 0;
 }
 
 .DownSection {
   width: 100%;
-  height: 15%;
+  height: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(241, 239, 239, 0.2);
+  background-color: rgba(202, 202, 202, 0.151);
   border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.DownSection h2 {
+  color: rgb(14, 13, 13);
+  font-size: 1.8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
