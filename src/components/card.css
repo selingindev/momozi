@@ -1,4 +1,5 @@
 .CardContainer {
+  margin: auto;
   perspective: 1000px; /* profundidade 3D */
   width: 28rem;
   height: 35rem; /* define altura fixa pro flip */
