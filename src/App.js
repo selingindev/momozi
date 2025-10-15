@@ -4,6 +4,9 @@ import foto1 from './fotos/momoEeuMural4.jpg'
 import f1 from './fotos/f1.jpg'
 import centrao from './fotos/centrao.jpeg'
 import sorrisoMomo from './fotos/sorrisoMomo.jpg'
+import momoziSolo from './fotos/momoziSolo.jpeg'
+import balao from './fotos/balao.png'
+import balao2 from './fotos/balao2.png'
 
 
 import Card from './components/card';
@@ -11,6 +14,21 @@ import Card from './components/card';
 function App() {
   return (
     <div className="App">
+          <div className='background2'>
+        <div className='centralCard'>
+          <div className='topSide'>
+           <h1> PARABÉNS SOSO!</h1>
+          </div>
+          <div className='middleSide'>
+            <img className="balao" src={balao}/>
+            <img className='centralImage' src={momoziSolo} alt="foto" />
+             <img className="balao2" src={balao2}/>
+          </div>
+          <div className='downSide'>
+            <h2>CELEBRAMOS HOJE SEUS 19 ANOS!! TE AMO MUITO!!!</h2>
+          </div>
+        </div>
+      </div>
       <div className="background">
         <div className='containerGrid'>
           <div className="muralContainer">
@@ -24,17 +42,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='background2'>
-        <div className='centralCard'>
-          <div className='topSide'>
-           <h1> PARABÉNS SOSO!</h1>
-
-          </div>
-          <div className='downSide'>
-            <h2>CELEBRAMOS HOJE SEU 19 ANOS!! TE AMO MUITO!!!</h2>
-          </div>
-        </div>
-      </div>
+  
     </div>
   );
 }

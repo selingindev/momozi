@@ -63,26 +63,71 @@
 
 .centralCard{
   width: 70%;
-  height: 70%;
+  height: 80%;
   background-color: rgba(152, 155, 155, 0.377);
-  display: block;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border-radius: 0 0 0px;
   border: 10px  dashed  rgb(189, 62, 62);
 }
 
 .topSide{
   width: 100%;
-  height: 50%;
+  height: 20%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
 }
 .topSide h1{
   font-size: 100px;
-  margin-top: 20px; 
+  margin: 0;
+  text-align: end;
 }
 
-.leftSide{
+.middleSide{
+  border-radius: 50%;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.centralImage{
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  border: 5px solid rgb(189, 62, 62);
+  object-fit: cover;
+}
+
+.balao{
+  width: 200px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.balao2{
+  width: 200px;
+  height: 350px;
+  object-fit: cover;
+  
+}
+
+.downSide{
   width: 50%;
-  height: 100%;
-  float: left;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 20px 0;
+}
+
+.downSide h2{
+  padding: 0;
+  margin: 0;
+  font-size: 40px;
+  color: rgb(189, 62, 62);
 }
