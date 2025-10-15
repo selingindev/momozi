@@ -1,14 +1,21 @@
+@font-face {
+  font-family: 'MinhaFonte';
+  src: url('C:\Users\Arthur Selingin\momozi\public\fonts\Boldins.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App {
   display: block;
   text-align: center;
-  width: 100vw;
+  width: auto;
   height: auto;
   padding: 0;
   margin: 0;
 }
 
 .background{
-  width: 100vw;
+  width: 100%;
   height: auto;
   min-height: 100vh;
   display: flex;
@@ -34,10 +41,48 @@
 .downMuralContainer{
   height: auto;
   width: 100%;
-  margin: 25px 0px;
+  margin: 25px 0px 50px 0px;
   display: grid;
   justify-content: center;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   gap: 0px 200px;
+}
+
+
+
+.background2{
+  font-family: 'MinhaFonte', sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("C:\Users\Arthur Selingin\momozi\src\fotos\backgroundNiver.jpg");
+}
+
+.centralCard{
+  width: 70%;
+  height: 70%;
+  background-color: rgba(152, 155, 155, 0.377);
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 0px;
+  border: 10px  dashed  rgb(189, 62, 62);
+}
+
+.topSide{
+  width: 100%;
+  height: 50%;
+}
+.topSide h1{
+  font-size: 100px;
+  margin-top: 20px; 
+}
+
+.leftSide{
+  width: 50%;
+  height: 100%;
+  float: left;
 }
